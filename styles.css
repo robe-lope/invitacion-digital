@@ -1,0 +1,165 @@
+#main{
+	background-color: #fbfaf8;
+	background-image: url("fondo.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	animation: transicion 1.5s;
+	font-family: 'Rouge Script', cursive;
+	padding-top: 300px;
+	padding-bottom: 250px;
+
+}
+.centrado{
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+.icono{
+	display: inline-grid;
+	justify-items: center;
+}
+.ig{
+	margin: 30px;
+
+}
+.separado{
+	padding-bottom: 50px;
+}
+.top{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.nombres h1{
+	padding-right: 20px;
+	font-size: 15.5rem;
+}
+.nombres h2{
+	font-size: 8rem;
+	padding: 10px;
+}
+#main p{
+	font-size: 4rem;
+	font-family: 'Libre Baskerville', serif;
+}
+.doble{
+	justify-content: space-around;
+}
+.doble a{
+	text-decoration: none;
+	color: black;
+}
+.info{
+	background: rgb(251,250,248);
+	background: linear-gradient(180deg, rgba(251,250,248,1) 19%, rgba(170,172,175,1) 97%);
+	color: #666;
+}
+#calesita img{
+  border: 3px solid #fbfaf8;
+  background-color: #fbfaf8;
+  border-radius: 2px;
+  padding: 5px;
+  width: 150px;
+  box-shadow: 0 0 4px 2px rgba(102, 102, 102, 0.7);
+  transform: rotate(2deg);
+}
+
+.info h5{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.info h2{
+	    display: flex;
+    justify-content: center;
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+}
+.info a{
+	text-decoration: none;
+	color: #666;
+}
+.info svg{
+	margin-right: 10px;
+}
+.fin a{
+	text-decoration: none;
+	color: #666;
+}
+@keyframes transicion{
+	from{
+		opacity: 0;
+		transform: rotateX(-10deg);
+	}
+	to {
+		opacity: 1;
+		transform: rotateX(0);
+	}
+}
+
+@media (max-width: 700px){
+
+	.nombres{
+	}
+	.nombres h1{
+	font-size: 3.5rem;
+}
+.nombres h2{
+	font-size: 2rem;
+	padding: 10px;
+}
+#main{
+	align-content: flex-start;
+}
+#main p{
+	font-size: 1rem;
+	font-family: 'Libre Baskerville', serif;
+}
+}
+.data{
+	    margin-left: 58px;
+    background: #666;
+    color: white;
+    font-weight: 600;
+    font-size: larger;
+}
+#josema{
+	padding-top: 10px;
+	background-image: url(josema.png);
+	background-color: #ffffff80;
+	background-size: 49%;
+	background-position: right;
+	background-repeat: no-repeat;
+
+}
+#txtjosema{
+	width: 232px;
+}
+.fin{
+	font-family: 'Montserrat', sans-serif;
+	padding-top: 100px;
+	background-color: #aaacaf;
+}
+.frase{
+	background-image: url(frase1.png);
+	height: 160px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.frase h1{
+	background-color: #f5deb378
+}
+
+footer{
+	background-color: black;
+	color: aquamarine;	
+}
+
+footer a{
+	text-decoration: none;
+	color: aquamarine;	
+}
+
+footer svg{
+	margin-left: 10px;
+}
