@@ -1,156 +1,149 @@
+/* Basicos */
+html{
+	font-size: 100%;
+	line-height: 1.5rem;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100%;
+}
+body{
+	margin: 0 auto;
+	padding: 0;
+	height: 100%;
+}
+
+*,*::before, *::after{
+	box-sizing: inherit;
+}
+
+img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/*Galeria*/
+.gallery{
+	padding: 0 1rem 10rem 1rem;
+}
+
+.gallery-auto-fit{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr));
+	grid-auto-rows: 100px;
+	grid-gap: 0.5rem;
+}
+
+.gallery-item{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.gallery-img{
+	height: 100%;
+	object-fit: cover;
+	transition: 0.5s ease-in-out;
+}
+
+.gallery-img:hover{
+	transform: scale(1.5);
+}
+
+.iconify{
+	background-color: 
+}
+
+    background: #7d73a2
+    color: fbfbfbfa;
+
+.home{
+	
+    padding-right: 0px !important;
+	padding-left: 0px !important;
+}
+
+.relleno{
+		background: #7d73a2 !important;
+    color: white !important;
+}
+.relleno2{
+		background: #7d73a2 !important;
+    color: white !important;
+}
+
 #main{
 	background-color: #fbfaf8;
-	background-image: url("fondo.png");
-	background-size: 100%;
+	background-image: url(fondo-main2.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 100%;
 	background-repeat: no-repeat;
-	animation: transicion 1.5s;
-	font-family: 'Rouge Script', cursive;
-	padding-top: 300px;
-	padding-bottom: 250px;
-
+  color: whitesmoke;
+	padding-right: 0px;
+	padding-left: 0px;
 }
+
 .centrado{
 	display: flex;
-	justify-content: center;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-.icono{
-	display: inline-grid;
-	justify-items: center;
-}
-.ig{
-	margin: 30px;
 
+.espaciado{
+	margin-top: 60px !important;
+}
+.aire{
+	margin-bottom: 30px;
 }
 .separado{
 	padding-bottom: 50px;
 }
 .top{
-	padding-top: 10px;
+	padding-top: 20px;
 	padding-bottom: 10px;
 }
 
-.nombres h1{
-	padding-right: 20px;
-	font-size: 15.5rem;
+#regalos{
+	max-width: 800px;
 }
-.nombres h2{
-	font-size: 8rem;
-	padding: 10px;
+#collapseExample{
+	background-color: #f3f3f3;
+	border-radius: 6px;
+  border-style: solid;
+  border-color: black;
+	margin-top: 10px;  
+	padding: 10px 5px 10px 5px;
 }
-#main p{
-	font-size: 4rem;
-	font-family: 'Libre Baskerville', serif;
-}
-.doble{
-	justify-content: space-around;
-}
-.doble a{
-	text-decoration: none;
-	color: black;
-}
-.info{
-	background: rgb(251,250,248);
-	background: linear-gradient(180deg, rgba(251,250,248,1) 19%, rgba(170,172,175,1) 97%);
-	color: #666;
-}
-#calesita img{
-  border: 3px solid #fbfaf8;
-  background-color: #fbfaf8;
-  border-radius: 2px;
-  padding: 5px;
-  width: 150px;
-  box-shadow: 0 0 4px 2px rgba(102, 102, 102, 0.7);
-  transform: rotate(2deg);
+#cbu, #alias{
+	border-style: none;
+	background-color: #f3f3f3;
 }
 
-.info h5{
-	font-family: 'Montserrat', sans-serif;
+#cbu, #alias:focus{
+	border: none;
+	outline: none;
+	background: #f3f3f3;
+}
+.dat::selection{
+	background: #f3f3f3;
 }
 
-.info h2{
-	    display: flex;
-    justify-content: center;
-    font-family: 'Merriweather', serif;
-    text-transform: uppercase;
-}
-.info a{
-	text-decoration: none;
-	color: #666;
-}
-.info svg{
-	margin-right: 10px;
-}
-.fin a{
-	text-decoration: none;
-	color: #666;
-}
-@keyframes transicion{
-	from{
-		opacity: 0;
-		transform: rotateX(-10deg);
-	}
-	to {
-		opacity: 1;
-		transform: rotateX(0);
-	}
-}
-
-@media (max-width: 700px){
-
-	.nombres{
-	}
-	.nombres h1{
-	font-size: 3.5rem;
-}
-.nombres h2{
-	font-size: 2rem;
-	padding: 10px;
-}
-#main{
-	align-content: flex-start;
-}
-#main p{
-	font-size: 1rem;
-	font-family: 'Libre Baskerville', serif;
-}
-}
-.data{
-	    margin-left: 58px;
-    background: #666;
-    color: white;
-    font-weight: 600;
-    font-size: larger;
-}
-#josema{
-	padding-top: 10px;
-	background-image: url(josema.png);
-	background-color: #ffffff80;
-	background-size: 49%;
-	background-position: right;
-	background-repeat: no-repeat;
-
-}
-#txtjosema{
-	width: 232px;
-}
-.fin{
-	font-family: 'Montserrat', sans-serif;
-	padding-top: 100px;
-	background-color: #aaacaf;
-}
 .frase{
-	background-image: url(frase1.png);
-	height: 160px;
+	background-image: url(caruchas.jpg);
+	height: 10rem;
 	background-size: cover;
-	background-position: center;
 	background-repeat: no-repeat;
-}
-.frase h1{
-	background-color: #f5deb378
+	color: whitesmoke;
 }
 
+footer a:hover{
+	color: #666;
+}
 footer{
+
+	display: flex;
+	justify-content: flex-end;
 	background-color: black;
 	color: aquamarine;	
 }
@@ -163,3 +156,117 @@ footer a{
 footer svg{
 	margin-left: 10px;
 }
+
+/* CSS DEL MODAL DE LA GALERIA */
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+  }
+@media only screen and (min-width: 600px){
+  #main{
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 600px){
+  .frase{
+  	background-image: url(img66.jpg);
+    background-position: 0% 70%;
+  }
+  }
+
+#info{
+	text-align: center;
+	max-width: 750px;
+}
+.cta svg{
+	margin: 0 10px 3px 0;
+}
+
+#remate{
+	font-style: italic;
+	font-size: 2rem;
+	padding-top: 20px;
+}
+
+@media only screen and (min-width: 600px){
+  #remate{
+  	    font-size: 3.5rem;
+    padding-top: 34px;
+  }
+  }
